@@ -1,0 +1,40 @@
+// GLOBAL
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+
+// FONTS
+@font-face {
+  font-family: 'Letter Gothic Std';
+  src: url('../fonts/LetterGothicStd-Bold.eot');
+  src: url('../fonts/LetterGothicStd-Bold.eot')  format('woff2'),url('../fonts/LetterGothicStd-Bold.woff') format('woff'),url('../fonts/LetterGothicStd-Bold.ttf') format('truetype');
+}
+
+/* styles to use when web fonts are loading */
+.wf-loading {
+  visibility: hidden;
+}
+
+
+h1 {
+  color: black;
+}
+
+
+p {
+  font-family: 'Letter Gothic Std';
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}

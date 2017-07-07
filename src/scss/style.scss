@@ -1,5 +1,4 @@
-// FONTS
+@import "../../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
 
-h1 {
-  color: black;
-}
+@import "_variables.scss";
+@import "_global.scss";
