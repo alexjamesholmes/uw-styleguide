@@ -46,11 +46,14 @@ ul {
   padding: 7em 6em 0em;
 }
 
-.header-type {
+.header-intro {
   @extend .header;
   background-color: $navy-1;
 }
-
+.header-type {
+  @extend .header;
+  background-color: $coal;
+}
 .header-color {
   @extend .header;
   background-color: $yellow;

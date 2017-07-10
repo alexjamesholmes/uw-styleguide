@@ -84,14 +84,17 @@ ul {
   background-color: #fff;
   margin: 3px 0; }
 
-.header, .header-type, .header-color {
+.header, .header-intro, .header-type, .header-color {
   width: 100vw;
   height: 14em;
   color: white;
   padding: 7em 6em 0em; }
 
-.header-type {
+.header-intro {
   background-color: #3c5e85; }
+
+.header-type {
+  background-color: #282828; }
 
 .header-color {
   background-color: #f7aa00; }
