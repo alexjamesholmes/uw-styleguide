@@ -1,5 +1,6 @@
 // GLOBAL
 * {
+  font-size: 16px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,12 +15,43 @@ ul {
 // TYPOGRAPHY
 .type-container {
   display: block;
-  width: 50%;
-  padding: 3em;
+  // width: 50%;
+  padding: 6em;
 }
 
+// NAVIGATION
+.nav-bar {
+  position: fixed;
+}
 
-// COLORS
+.burger {
+  position: absolute;
+  display: inline-block;
+  margin: 1.5em;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: $white;
+  margin: 3px 0;
+}
+
+// HEADER
+.header {
+  width: 100vw;
+  height: 14em;
+  color: white;
+  padding: 7em 6em 0em;
+}
+
+.header-type {
+  @extend .header;
+  background-color: $coal;
+}
+
+// COLORS FLEX
 .color-container {
   display: flex;
   width: 100vw;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Lato:400");
 @font-face {
   font-family: 'ChaparralPro-Regular';
   src: url("../fonts/ChaparralPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ChaparralPro-Regular.otf") format("opentype"), url("../fonts/ChaparralPro-Regular.woff") format("woff"), url("../fonts/ChaparralPro-Regular.ttf") format("truetype"), url("../fonts/ChaparralPro-Regular.svg#ChaparralPro-Regular") format("svg");
@@ -6,7 +7,7 @@
 
 @font-face {
   font-family: 'BebasNeue';
-  src: url("../fonts/BebasNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue.otf") format("opentype"), url("../fonts/BebasNeue.woff") format("woff"), url("../fonts/BebasNeue.ttf") format("truetype"), url("../fonts/BebasNeue.svg#BebasNeue") format("svg");
+  src: url("../fonts/bebas-kai.eot?#iefix") format("embedded-opentype"), url("../fonts/bebas-kai.otf") format("opentype"), url("../fonts/bebas-kai.woff") format("woff"), url("../fonts/bebas-kai.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -15,18 +16,44 @@
   visibility: hidden; }
 
 h1 {
-  font-family: 'ChaparralPro-Regular';
-  color: #282828; }
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4.5em;
+  letter-spacing: -.02em;
+  line-height: .9em; }
+
+h2 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  letter-spacing: -.02em;
+  line-height: .9em; }
+
+h3 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 400;
+  font-size: 2.9em;
+  letter-spacing: -.02em;
+  line-height: .9em; }
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2em; }
 
 p {
-  font-family: helvetica;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 1em;
-  font-weight: normal;
   font-style: normal;
-  color: #282828;
-  letter-spacing: 0px; }
+  letter-spacing: 0px;
+  line-height: 1.5em; }
 
 * {
+  font-size: 16px;
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
@@ -39,8 +66,31 @@ ul {
 
 .type-container {
   display: block;
-  width: 50%;
-  padding: 3em; }
+  padding: 6em; }
+
+.nav-bar {
+  position: fixed; }
+
+.burger {
+  position: absolute;
+  display: inline-block;
+  margin: 1.5em; }
+
+.bar-1, .bar-2, .bar-3 {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+  margin: 3px 0; }
+
+.header, .header-type {
+  width: 100vw;
+  height: 14em;
+  color: white;
+  padding: 7em 6em 0em; }
+
+.header-type {
+  background-color: #282828; }
 
 .color-container {
   display: flex;
