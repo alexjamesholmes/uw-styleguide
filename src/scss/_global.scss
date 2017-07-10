@@ -15,8 +15,8 @@ ul {
 // TYPOGRAPHY
 .type-container {
   display: block;
-  // width: 50%;
   padding: 6em;
+  color: $coal;
 }
 
 // NAVIGATION
@@ -48,7 +48,12 @@ ul {
 
 .header-type {
   @extend .header;
-  background-color: $coal;
+  background-color: $navy-1;
+}
+
+.header-color {
+  @extend .header;
+  background-color: $yellow;
 }
 
 // COLORS FLEX
@@ -61,7 +66,7 @@ ul {
 
 .color-grid {
   width: 100%;
-  height: 8em;
+  height: 1em;
   margin: auto;
 }
 
