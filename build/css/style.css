@@ -41,7 +41,7 @@ h4 {
   font-family: "BebasNeue", sans-serif;
   font-weight: 400;
   font-size: 1.8em;
-  letter-spacing: 0;
+  letter-spacing: -.02em;
   line-height: .9em; }
 
 p {
@@ -313,15 +313,17 @@ body {
   display: inline-block;
   color: #fff;
   background-color: #e84035;
-  padding: 1em 1.2em;
-  border-radius: .2em; }
+  padding: 1em;
+  border-radius: 3px; }
 
 .button h4 {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  letter-spacing: 0.03em; }
 
 .questions {
   position: relative;
-  height: 30em; }
+  height: 36em;
+  background-color: #ecf0f1; }
 
 .questions ul {
   position: absolute; }
@@ -335,7 +337,7 @@ input[type=text] {
   height: 3.8em;
   margin: 16px 0;
   padding: 12px 20px;
-  background-color: #ecf0f1;
+  background-color: #fff;
   border: 0;
   border-radius: 3px;
   color: #282828;

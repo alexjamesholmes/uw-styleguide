@@ -256,18 +256,20 @@ body {
   display: inline-block;
   color: $white-1;
   background-color: $uw-red;
-  padding: 1em 1.2em;
-  border-radius: .2em;
+  padding: 1em;
+  border-radius: $br-small;
 }
 .button h4 {
   font-size: 1.3em;
+  letter-spacing: 0.03em;
 }
 
 // FORMS
 .questions {
   position: relative;
-  height: 30em;
+  height: 36em;
   @extend .section-margin;
+  background-color: $white-2;
 }
 .questions ul {
   position: absolute;
@@ -283,9 +285,9 @@ input[type=text] {
   height: 3.8em;
   margin: 16px 0;
   padding: 12px 20px;
-  background-color: $white-2;
+  background-color: $white-1;
   border: 0;
-  border-radius: 3px;
+  border-radius: $br-small;
   color: $coal-1;
   font-family: $body;
   font-weight: bold;
