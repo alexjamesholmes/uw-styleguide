@@ -1,9 +1,14 @@
 // GLOBAL
+$small: 415px;
+
 * {
-  font-size: 16px;
+  font-size: 13px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  @include breakpoint($small) {
+    font-size: 16px
+  }
 }
 a {
   text-decoration: none;
@@ -12,11 +17,16 @@ ul {
   list-style-type: none;
 }
 
-// TYPOGRAPHY
-.type-container {
-  display: block;
-  padding: 6em;
-  color: $coal;
+// POSITIONING
+.section-margin {
+  margin: 0 6em;
+}
+
+.spacer-small {
+  height: 3em;
+}
+.spacer-medium {
+  height: 5em;
 }
 
 // NAVIGATION
@@ -48,72 +58,77 @@ ul {
 
 .header-intro {
   @extend .header;
-  background-color: $navy-1;
+  background-color: $blue-1;
 }
 .header-type {
   @extend .header;
-  background-color: $coal;
+  background-color: $coal-1;
 }
 .header-color {
   @extend .header;
-  background-color: $yellow;
+  background-color: $yellow-1;
 }
+
+// TYPOGRAPHY
+.type-container {
+  @extend .section-margin;
+  display: block;
+  margin: 0 6em;
+  color: $coal-1;
+}
+
 
 // COLORS FLEX
 .color-container {
+  @extend .section-margin;
   display: flex;
-  width: 100vw;
-  justify-content: center;
+  margin: 0 6em;
+  justify-content: left;
   overflow: auto;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .color-grid {
-  width: 100%;
-  height: 1em;
-  margin: auto;
+  width: 6em;
+  height: 6em;
+  border-radius: 0 0 0.8em;
+  margin: 0 1em 1em 0;
 }
 
-.red-1 {
+.color:nth-child(1) {
   @extend .color-grid;
-  background-color: $logo-red;
+  background-color: $uw-red;
 }
-.red-2 {
+.color:nth-child(2) {
   @extend .color-grid;
-  background-color: $common-red;
+  background-color: $coal-1;
 }
-.coal {
+.color:nth-child(3) {
   @extend .color-grid;
-  background-color: $coal;
+  background-color: $yellow-1;
 }
-.yellow {
+.color:nth-child(4) {
   @extend .color-grid;
-  background-color: $yellow;
+  background-color: $green-1;
 }
-.mustard {
+.color:nth-child(5) {
   @extend .color-grid;
-  background-color: $mustard;
+  background-color: $mint-1;
 }
-.rust {
+.color:nth-child(6) {
   @extend .color-grid;
-  background-color: $rust;
+  background-color: $aqua-1;
 }
-.navy-1 {
+.color:nth-child(7) {
   @extend .color-grid;
-  background-color: $navy-1;
+  background-color: $blue-1;
 }
-.navy-2 {
+.color:nth-child(8) {
   @extend .color-grid;
-  background-color: $navy-2;
+  background-color: $lilac-1;
 }
-.blue {
+.color:nth-child(9) {
   @extend .color-grid;
-  background-color: $blue;
-}
-.mint{
-  @extend .color-grid;
-  background-color: $mint;
-}
-.green {
-  @extend .color-grid;
-  background-color: $green;
+  background-color: $rust-1;
 }
