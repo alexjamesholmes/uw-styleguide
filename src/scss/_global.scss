@@ -14,6 +14,62 @@ a {
 ul {
   list-style-type: none;
 }
+textarea, input, button { outline: none; }
+
+body {
+  background-color: $white-1;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+// COLUMN CONTROL
+@include add-grid(12);
+@include add-gutter(1.5em);
+@include add-gutter-style('fixed');
+
+// 12 -> 12 -> 6-6
+.c1-1 {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    @include grid-span(6, 1)
+  }
+}
+.c1-2 {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    @include grid-span(6, 7)
+  }
+}
+
+// 12 -> 12 -> 4-4-4
+.c2-1 {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    @include grid-span(4, 1)
+  }
+}
+.c2-2 {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    @include grid-span(4, 5)
+  }
+}
+.c2-3 {
+  @include grid-span(12, 1);
+  @include breakpoint($medium) {
+    @include grid-span(4, 9)
+  }
+}
 
 // POSITIONING
 .section-margin {
@@ -23,6 +79,18 @@ ul {
   }
   @include breakpoint($medium) {
     margin: 0 6em;
+  }
+}
+.section-padding {
+  padding-left: 3em;
+  padding-right: 3em;
+  @include breakpoint($small) {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  @include breakpoint($medium) {
+    padding-left: 6em;
+    padding-right: 6em;
   }
 }
 
@@ -40,6 +108,9 @@ ul {
   transform: translateY(-50%);
 }
 
+.spacer-tiny {
+  height: 1em;
+}
 .spacer-small {
   height: 3em;
 }
@@ -62,7 +133,7 @@ ul {
   width: 18px;
   height: 2px;
   border-radius: 1px;
-  background-color: $white;
+  background-color: $white-1;
   margin: 3px 0;
 }
 
@@ -71,7 +142,8 @@ ul {
   width: 100vw;
   height: 14em;
   color: white;
-  padding: 7em 6em 0em;
+  @extend .section-padding;
+  padding-top: 7em;
 }
 
 .header-intro {
@@ -84,29 +156,42 @@ ul {
 }
 .header-color {
   @extend .header;
-  background-color: $yellow-1;
+  background-color: $coal-1;
 }
 
 // TYPOGRAPHY
 .type-container {
   @extend .section-margin;
-  display: block;
+  display: inline-block;
   color: $coal-1;
 }
+.type-container h1 {
+  margin-bottom: 0.1em;
+}
+.type-container h3 {
+  margin-bottom: 0.3em;
+}
+.type-container .c1-1, .c2-1, .c2-2 {
+  margin-bottom: 1em;
+  @include breakpoint($medium) {
+    margin-bottom: 0;
+  }
+}
+
 
 .type-on-color {
   position: relative;
   @extend .section-margin;
   height: 32em;
   padding: 3em;
-  color: $white;
-  background-color: $aqua-1;
+  color: $white-1;
+  background-color: $blue-1;
   text-align: center;
 }
 .type-on-color div {
   position: absolute;
   @extend .center-xy;
-  width: 66%;
+  width: 60%;
 }
 .type-on-color h1 {
   margin-bottom: .1em;
@@ -123,9 +208,9 @@ ul {
 }
 
 .color-grid {
-  width: 6em;
-  height: 6em;
-  border-radius: 0 0 0.8em;
+  width: 8em;
+  height: 8em;
+  border-radius: 0 0 0.5em;
   margin: 0 1em 1em 0;
 }
 
@@ -164,4 +249,50 @@ ul {
 .color:nth-child(9) {
   @extend .color-grid;
   background-color: $rust-1;
+}
+
+// BUTTONS
+.button {
+  display: inline-block;
+  color: $white-1;
+  background-color: $uw-red;
+  padding: 1em 1.2em;
+  border-radius: .2em;
+}
+.button h4 {
+  font-size: 1.3em;
+}
+
+// FORMS
+.questions {
+  position: relative;
+  height: 30em;
+  @extend .section-margin;
+}
+.questions ul {
+  position: absolute;
+  @extend .center-x;
+}
+.questions li {
+  margin-bottom: 3em;
+}
+
+input[type=text] {
+  display: block;
+  width: 22em;
+  height: 3.8em;
+  margin: 16px 0;
+  padding: 12px 20px;
+  background-color: $white-2;
+  border: 0;
+  border-radius: 3px;
+  color: $coal-1;
+  font-family: $body;
+  font-weight: bold;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $coal-3;
+}
+input[type=text]:focus {
+    border: 3px solid $blue-1;
 }
