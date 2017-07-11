@@ -31,21 +31,21 @@ $base-url: '../fonts/';
 }
 
 // SETUP 1
-// $headlines: 'BebasNeue', sans-serif;
+// $headline: 'BebasNeue', sans-serif;
 // $subhead: 'Oswald', sans-serif;
 // $body: 'Roboto', sans-serif;
 // SETUP 2
-// $headlines: 'BebasNeue', sans-serif;
+// $headline: 'BebasNeue', sans-serif;
 // $subhead: 'Oswald', sans-serif;
 // $body: 'Lato', sans-serif;
 // SETUP 3
-$headlines: 'BebasNeue', sans-serif;
+$headline: 'BebasNeue', sans-serif;
 $subhead: 'lato', sans-serif;
 $body: 'Open Sans', sans-serif;
 
 // STYLES
 h1 {
-  font-family: $headlines;
+  font-family: $headline;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5em;
@@ -54,7 +54,7 @@ h1 {
 }
 
 h2 {
-  font-family: $headlines;
+  font-family: $headline;
   font-weight: 400;
   font-size: 3.2em;
   letter-spacing: -.02em;
@@ -70,7 +70,7 @@ h3 {
 }
 
 h4 {
-  font-family: $headlines;
+  font-family: $headline;
   font-weight: 400;
   font-size: 1.8em;
   letter-spacing: -.02em;

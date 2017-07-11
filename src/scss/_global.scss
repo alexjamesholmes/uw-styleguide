@@ -274,7 +274,7 @@ $column-rule: 0px dashed $white-3;
 .questions {
   position: relative;
   height: 36em;
-  @extend .section-margin;
+  width: 100vw;
   background-color: $white-2;
 }
 .questions ul {
@@ -303,4 +303,58 @@ input[type=text] {
 }
 input[type=text]:focus {
     border: 3px solid $blue-1;
+}
+
+// RESULTS
+.results {
+  width: 100vw;
+  background-color: $white-2;
+}
+.grid-wrapper {
+  @extend .section-wrapper;
+  position: relative;
+  background-color: $blue-1;
+  padding: 13em 0;
+}
+.grid-wrapper div:first-child {
+  @extend .section-margin;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(200px,2fr));
+}
+
+// QUOTE
+.quote {
+  cursor: pointer;
+  border-radius: $br-medium;
+  background-color: $white-1;
+  padding: 24px ;
+  position: relative;
+  color: $coal-1;
+}
+.quote img {
+  display: block;
+  margin: 6px 0 12px;
+}
+.quote footer {
+  display: flex;
+  margin: 16px 0 8px;
+}
+.quote p {
+  line-height: 1;
+  flex: 1 1 50px;
+}
+.quote span {
+  display: block;
+  font-family: $body;
+  font-size: 16px;
+  margin-top: -2px;
+}
+.quote .price {
+  font-family: $headline;
+  font-size: 3.5em;
+}
+.quote .num {
+  font-family: $headline;
+  font-size: 2.5em;
 }
