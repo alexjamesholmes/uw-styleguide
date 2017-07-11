@@ -44,32 +44,48 @@ body {
     @include grid-span(6, 1)
   }
 }
-.c1-2 {
-  @include grid-span(12, 1);
+
+// TEXT COLUMNS
+
+$column-gap: 3em;
+$column-rule: 1px dashed $coal-3;
+
+// 1 -> 2
+.txtcol-1-2 {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+  -webkit-column-gap: $column-gap; /* Chrome, Safari, Opera */
+  -moz-column-gap: $column-gap; /* Firefox */
+  column-gap: $column-gap;
+  -webkit-column-rule: $column-rule; /* Chrome, Safari, Opera */
+  -moz-column-rule: $column-rule; /* Firefox */
+  column-rule: $column-rule;
   @include breakpoint($medium) {
-    @include grid-span(6, 7)
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
   }
 }
 
-// 12 -> 12 -> 4-4-4
-.c2-1 {
-  @include grid-span(12, 1);
+// 1 -> 3
+.txtcol-1-3 {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+  -webkit-column-gap: $column-gap; /* Chrome, Safari, Opera */
+  -moz-column-gap: $column-gap; /* Firefox */
+  column-gap: $column-gap;
+  -webkit-column-rule: $column-rule; /* Chrome, Safari, Opera */
+  -moz-column-rule: $column-rule; /* Firefox */
+  column-rule: $column-rule;
   @include breakpoint($medium) {
-    @include grid-span(4, 1)
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
   }
 }
-.c2-2 {
-  @include grid-span(12, 1);
-  @include breakpoint($medium) {
-    @include grid-span(4, 5)
-  }
-}
-.c2-3 {
-  @include grid-span(12, 1);
-  @include breakpoint($medium) {
-    @include grid-span(4, 9)
-  }
-}
+
 
 // POSITIONING
 .section-margin {
