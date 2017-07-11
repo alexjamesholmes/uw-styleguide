@@ -68,7 +68,13 @@ ul {
   list-style-type: none; }
 
 .section-margin, .type-container, .type-on-color, .color-container {
-  margin: 0 6em; }
+  margin: 0 3em; }
+  @media (min-width: 415px) {
+    .section-margin, .type-container, .type-on-color, .color-container {
+      margin: 0 4em; } }
+  @media (min-width: 769px) {
+    .section-margin, .type-container, .type-on-color, .color-container {
+      margin: 0 6em; } }
 
 .center-xy, .type-on-color div {
   top: 50%;
