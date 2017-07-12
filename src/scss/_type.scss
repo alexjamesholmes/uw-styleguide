@@ -1,7 +1,7 @@
 // FONTS
 $base-url: '../fonts/';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald|Lato:400,700|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900|Oswald|Lato:400,700|Roboto|Unica+One|Open+Sans+Condensed:700');
 
 @font-face {
     font-family: 'ChaparralPro-Regular';
@@ -41,7 +41,8 @@ $base-url: '../fonts/';
 // SETUP 3
 $headline: 'BebasNeue', sans-serif;
 $subhead: 'lato', sans-serif;
-$body: 'Open Sans', sans-serif;
+$body: 'lato', sans-serif;
+$labels: 'Oswald', sans-serif;
 
 // STYLES
 h1 {
@@ -70,11 +71,20 @@ h3 {
 }
 
 h4 {
-  font-family: $headline;
+  font-family: $body;
   font-weight: 400;
-  font-size: 1.8em;
+  font-size: 1.55em;
   letter-spacing: -.02em;
   line-height: .9em;
+}
+
+h5 {
+  font-family: $labels;
+  font-weight: 400;
+  font-size: .8em;
+  letter-spacing: -.1;
+  line-height: .5em;
+  text-transform: uppercase;
 }
 
 
@@ -88,5 +98,5 @@ p {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 900;
 }

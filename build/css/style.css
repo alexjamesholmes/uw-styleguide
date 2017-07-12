@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald|Lato:400,700|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,900|Oswald|Lato:400,700|Roboto|Unica+One|Open+Sans+Condensed:700");
 @font-face {
   font-family: 'ChaparralPro-Regular';
   src: url("../fonts/ChaparralPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ChaparralPro-Regular.otf") format("opentype"), url("../fonts/ChaparralPro-Regular.woff") format("woff"), url("../fonts/ChaparralPro-Regular.ttf") format("truetype"), url("../fonts/ChaparralPro-Regular.svg#ChaparralPro-Regular") format("svg");
@@ -38,14 +38,22 @@ h3 {
   line-height: 1.1em; }
 
 h4 {
-  font-family: "BebasNeue", sans-serif;
+  font-family: "lato", sans-serif;
   font-weight: 400;
-  font-size: 1.8em;
+  font-size: 1.55em;
   letter-spacing: -.02em;
   line-height: .9em; }
 
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+  letter-spacing: -.1;
+  line-height: .5em;
+  text-transform: uppercase; }
+
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "lato", sans-serif;
   font-weight: 400;
   font-size: 1em;
   font-style: normal;
@@ -53,7 +61,7 @@ p {
   line-height: 1.55em; }
 
 strong {
-  font-weight: bold; }
+  font-weight: 900; }
 
 * {
   font-size: 14px;
@@ -271,17 +279,17 @@ body {
 .button {
   display: inline-block;
   color: #fff;
-  background-color: #e84035;
+  background-color: #336f8f;
   padding: 1em;
   border-radius: 3px; }
 
 .button h4 {
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 0.03em; }
 
 .questions {
   position: relative;
-  height: 36em;
+  height: 40em;
   width: 100vw;
   background-color: #ecf0f1; }
 
@@ -293,23 +301,25 @@ body {
 
 input[type=text] {
   display: block;
-  width: 22em;
-  height: 3.8em;
-  margin: 16px 0;
-  padding: 12px 20px;
-  background-color: #fff;
-  border: 0;
+  width: 400px;
+  height: 80px;
+  margin: 0 0 16px;
+  padding: 32px 0 0;
+  background: transparent;
+  border-bottom: 4px solid #6ea7c3;
   border-radius: 3px;
-  color: #282828;
-  font-family: "Open Sans", sans-serif;
+  color: #336f8f;
+  font-family: "lato", sans-serif;
+  font-size: 2.1em;
   font-weight: bold; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #979495; }
 
-input[type=text]:focus {
-  border: 3px solid #336f8f; }
+input {
+  border: 0;
+  outline: 0; }
 
 .results {
   width: 100vw;
@@ -347,9 +357,9 @@ input[type=text]:focus {
 
 .quote span {
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
-  margin-top: -2px; }
+  margin-top: -3px; }
 
 .quote .price {
   font-family: "BebasNeue", sans-serif;
