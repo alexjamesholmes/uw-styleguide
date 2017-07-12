@@ -260,14 +260,15 @@ $column-rule: 0px dashed $white-3;
 // BUTTONS
 .button {
   display: inline-block;
-  color: $white-1;
+  color: $white-2;
   background-color: $blue-1;
   padding: 1em;
   border-radius: $br-small;
+  box-shadow: 0px 0px 4px rgba($coal-1, 0.2);
 }
-.button h4 {
-  font-size: 1em;
-  letter-spacing: 0.03em;
+.button p {
+  // font-size: 1em;
+  letter-spacing: 0.04em;
 }
 
 // FORMS
@@ -283,6 +284,9 @@ $column-rule: 0px dashed $white-3;
 }
 .questions li {
   margin-bottom: 3em;
+}
+.questions h4 {
+  color: $blue-1;
 }
 
 input[type=text] {
