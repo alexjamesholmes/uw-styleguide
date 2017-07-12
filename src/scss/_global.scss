@@ -178,10 +178,10 @@ $column-rule: 0px dashed $white-3;
   content: '';
   position: absolute;
   height: 2px;
-  background: $coal-3;
+  background: $coal-1;
   left: 0;
   right: 0;
-  top: 26px;
+  top: 22px;
 }
 
 
@@ -261,8 +261,8 @@ $column-rule: 0px dashed $white-3;
 .button {
   display: inline-block;
   color: $white-2;
-  background-color: $blue-1;
-  padding: 1em;
+  background-color: $blue-4;
+  padding: .9em 1em;
   border-radius: $br-small;
   box-shadow: 0px 0px 4px rgba($coal-1, 0.2);
 }
@@ -289,6 +289,13 @@ $column-rule: 0px dashed $white-3;
   color: $blue-1;
 }
 
+input {
+  border: 0;
+  outline: 0;
+}
+::selection {
+  background: $yellow-2;
+}
 input[type=text] {
   display: block;
   width: 400px;
@@ -296,24 +303,20 @@ input[type=text] {
   margin: 0 0 16px;
   padding: 32px 0 0;
   background: transparent;
-  border-bottom: 4px solid $blue-2;
+  border-bottom: 4px solid $blue-3;
   border-radius: $br-small;
   color: $blue-1;
   font-family: $body;
   font-size: 2.1em;
   font-weight: bold;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
   color: $coal-3;
 }
 input[type=text]:focus {
-    // border: 3px solid $blue-1;
+  border-bottom: 4px solid $blue-1;
 }
-input {
-  border: 0;
-  outline: 0;
 
-}
 // RESULTS
 .results {
   width: 100vw;
