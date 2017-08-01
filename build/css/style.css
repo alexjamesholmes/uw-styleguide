@@ -17,25 +17,24 @@
 
 h1 {
   font-family: "UniformExtraCondensed-medium", sans-serif;
-  text-transform: uppercase;
   font-weight: 400;
-  font-size: 4.5em;
+  font-size: 3.875em;
   letter-spacing: -.02em;
-  line-height: .9em; }
+  line-height: 1em; }
 
 h2 {
-  font-family: "UniformExtraCondensed-medium", sans-serif;
+  font-family: "lato", sans-serif;
   font-weight: 400;
-  font-size: 3.2em;
+  font-size: 1.872em;
   letter-spacing: -.02em;
   line-height: .9em; }
 
 h3 {
   font-family: "lato", sans-serif;
-  font-size: 1.8em;
-  font-weight: 700;
-  letter-spacing: -.02em;
-  line-height: 1.1em; }
+  font-size: 1.375em;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1.375em; }
 
 h4 {
   font-family: "lato", sans-serif;
@@ -45,7 +44,7 @@ h4 {
   line-height: .9em; }
 
 h5 {
-  font-family: "Oswald", sans-serif;
+  font-family: "UniformExtraCondensed-medium", sans-serif;
   font-weight: 400;
   font-size: .8em;
   letter-spacing: -.1;
@@ -223,18 +222,20 @@ body {
 
 .type-on-color {
   position: relative;
-  height: 32em;
-  padding: 3em;
+  height: 40em;
+  padding: 6em;
   color: #fff;
   background-color: #336f8f;
-  text-align: center; }
+  text-align: left; }
 
 .type-on-color div {
   position: absolute;
-  max-width: 600px; }
+  max-width: 320px; }
 
 .type-on-color h1 {
-  margin-bottom: .1em; }
+  padding-bottom: .1em;
+  margin-bottom: .2em;
+  border-bottom: 2px solid #fff; }
 
 .color-container {
   display: flex;
@@ -365,7 +366,7 @@ input[type=text]:focus {
 
 .quote span {
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "UniformExtraCondensed-medium", sans-serif;
   font-size: 16px;
   margin-top: -3px; }
 

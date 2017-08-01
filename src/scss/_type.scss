@@ -42,32 +42,32 @@ $base-url: '../fonts/';
 $headline: 'UniformExtraCondensed-medium', sans-serif;
 $subhead: 'lato', sans-serif;
 $body: 'lato', sans-serif;
-$labels: 'Oswald', sans-serif;
+$labels: 'UniformExtraCondensed-medium', sans-serif;
 
 // STYLES
 h1 {
   font-family: $headline;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: 400;
-  font-size: 4.5em;
+  font-size: 3.875em;
   letter-spacing: -.02em;
-  line-height: .9em;
+  line-height: 1em;
 }
 
 h2 {
-  font-family: $headline;
+  font-family: $subhead;
   font-weight: 400;
-  font-size: 3.2em;
+  font-size: 1.872em;
   letter-spacing: -.02em;
   line-height: .9em;
 }
 
 h3 {
   font-family: $subhead;
-  font-size: 1.8em;
-  font-weight: 700;
-  letter-spacing: -.02em;
-  line-height: 1.1em;
+  font-size: 1.375em;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1.375em;
 }
 
 h4 {
@@ -86,7 +86,6 @@ h5 {
   line-height: .5em;
   text-transform: uppercase;
 }
-
 
 p {
   font-family: $body;

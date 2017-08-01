@@ -188,19 +188,21 @@ $column-rule: 0px dashed $white-3;
 .type-on-color {
   position: relative;
   @extend .section-margin;
-  height: 32em;
-  padding: 3em;
+  height: 40em;
+  padding: 6em;
   color: $white-1;
   background-color: $blue-1;
-  text-align: center;
+  text-align: left;
 }
 .type-on-color div {
   position: absolute;
   @extend .center-xy;
-  max-width: 600px;
+  max-width: 320px;
 }
 .type-on-color h1 {
-  margin-bottom: .1em;
+  padding-bottom: .1em;
+  margin-bottom: .2em;
+  border-bottom: 2px solid $white-1;
 }
 
 // COLORS FLEX
