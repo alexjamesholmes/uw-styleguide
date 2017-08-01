@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,900|Oswald|Lato:400,700|Roboto|Unica+One|Open+Sans+Condensed:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,900|Oswald|Lato:300,400,700|Roboto|Unica+One|Open+Sans+Condensed:700");
 @font-face {
   font-family: 'ChaparralPro-Regular';
   src: url("../fonts/ChaparralPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ChaparralPro-Regular.otf") format("opentype"), url("../fonts/ChaparralPro-Regular.woff") format("woff"), url("../fonts/ChaparralPro-Regular.ttf") format("truetype"), url("../fonts/ChaparralPro-Regular.svg#ChaparralPro-Regular") format("svg");
@@ -17,44 +17,44 @@
 
 h1 {
   font-family: "UniformExtraCondensed-medium", sans-serif;
-  font-weight: 400;
   font-size: 3.875em;
+  font-weight: 400;
   letter-spacing: -.02em;
   line-height: 1em; }
 
 h2 {
   font-family: "lato", sans-serif;
-  font-weight: 400;
   font-size: 1.872em;
+  font-weight: 300;
   letter-spacing: -.02em;
   line-height: .9em; }
 
 h3 {
   font-family: "lato", sans-serif;
   font-size: 1.375em;
-  font-weight: 400;
-  letter-spacing: -.01em;
+  font-weight: 300;
+  letter-spacing: .01em;
   line-height: 1.375em; }
 
 h4 {
   font-family: "lato", sans-serif;
+  font-size: 1.25em;
   font-weight: 400;
-  font-size: 1.55em;
-  letter-spacing: -.02em;
+  letter-spacing: .02em;
   line-height: .9em; }
 
 h5 {
   font-family: "UniformExtraCondensed-medium", sans-serif;
-  font-weight: 400;
   font-size: .8em;
+  font-weight: 400;
   letter-spacing: -.1;
   line-height: .5em;
   text-transform: uppercase; }
 
 p {
   font-family: "lato", sans-serif;
-  font-weight: 400;
   font-size: 1em;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0px;
   line-height: 1.55em; }
@@ -85,6 +85,9 @@ textarea, input, button {
 
 body {
   background-color: #fff; }
+
+::selection {
+  background: #d8ffa6; }
 
 .c1-1 {
   width: 100%;
@@ -144,7 +147,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.center-x, .questions ul {
+.center-x, .button, .questions ul {
   left: 50%;
   transform: translateX(-50%); }
 
@@ -278,57 +281,51 @@ body {
   background-color: #872318; }
 
 .button {
+  position: relative;
   display: inline-block;
   color: #ecf0f1;
-  background-color: #3188b6;
-  padding: .9em 1em;
-  border-radius: 4px;
-  box-shadow: 0px 0px 4px rgba(40, 40, 40, 0.2); }
+  padding: 1.2em 1.35em;
+  border: 2px solid #fff;
+  border-radius: 12px; }
 
-.button p {
-  letter-spacing: 0.04em; }
+.button h4 {
+  text-transform: uppercase; }
 
 .questions {
   position: relative;
-  height: 40em;
+  height: 48em;
   width: 100vw;
-  background-color: #ecf0f1; }
+  background-color: #336f8f; }
 
 .questions ul {
-  position: absolute; }
+  position: absolute;
+  width: 360px; }
 
 .questions li {
-  margin-bottom: 3em; }
+  margin-bottom: 5em; }
 
-.questions h4 {
-  color: #336f8f; }
+.questions h3 {
+  color: #fff; }
 
 input {
   border: 0;
   outline: 0; }
 
-::selection {
-  background: #fbc35e; }
-
 input[type=text] {
   display: block;
-  width: 400px;
-  height: 80px;
-  margin: 0 0 16px;
-  padding: 32px 0 0;
+  width: 100%;
+  height: 90px;
+  margin: 0 0 40px;
+  padding: 16px 0 0;
   background: transparent;
-  border-bottom: 4px solid #a9c9df;
-  border-radius: 4px;
-  color: #336f8f;
+  border-bottom: 2px solid #d8ffa6;
+  color: #d8ffa6;
   font-family: "lato", sans-serif;
-  font-size: 2.1em;
-  font-weight: bold; }
+  font-size: 1.872em;
+  font-weight: 400; }
 
 ::-webkit-input-placeholder {
-  color: #979495; }
-
-input[type=text]:focus {
-  border-bottom: 4px solid #336f8f; }
+  color: #d8ffa6; }
 
 .results {
   width: 100vw;

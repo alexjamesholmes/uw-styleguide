@@ -1,7 +1,7 @@
 // FONTS
 $base-url: '../fonts/';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900|Oswald|Lato:400,700|Roboto|Unica+One|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900|Oswald|Lato:300,400,700|Roboto|Unica+One|Open+Sans+Condensed:700');
 
 @font-face {
     font-family: 'ChaparralPro-Regular';
@@ -48,16 +48,16 @@ $labels: 'UniformExtraCondensed-medium', sans-serif;
 h1 {
   font-family: $headline;
   // text-transform: uppercase;
-  font-weight: 400;
   font-size: 3.875em;
+  font-weight: 400;
   letter-spacing: -.02em;
   line-height: 1em;
 }
 
 h2 {
   font-family: $subhead;
-  font-weight: 400;
   font-size: 1.872em;
+  font-weight: 300;
   letter-spacing: -.02em;
   line-height: .9em;
 }
@@ -65,23 +65,23 @@ h2 {
 h3 {
   font-family: $subhead;
   font-size: 1.375em;
-  font-weight: 400;
-  letter-spacing: -.01em;
+  font-weight: 300;
+  letter-spacing: .01em;
   line-height: 1.375em;
 }
 
 h4 {
   font-family: $body;
+  font-size: 1.25em;
   font-weight: 400;
-  font-size: 1.55em;
-  letter-spacing: -.02em;
+  letter-spacing: .02em;
   line-height: .9em;
 }
 
 h5 {
   font-family: $labels;
-  font-weight: 400;
   font-size: .8em;
+  font-weight: 400;
   letter-spacing: -.1;
   line-height: .5em;
   text-transform: uppercase;
@@ -89,8 +89,8 @@ h5 {
 
 p {
   font-family: $body;
-  font-weight: 400;
   font-size: 1em;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0px;
   line-height: 1.55em;
