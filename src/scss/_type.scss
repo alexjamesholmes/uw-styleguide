@@ -15,11 +15,11 @@ $base-url: '../fonts/';
 }
 
 @font-face {
-    font-family: 'BebasNeue';
-    src:    url('#{$base-url}bebas-kai.eot?#iefix') format('embedded-opentype'),
-            url('#{$base-url}bebas-kai.otf')  format('opentype'),
-            url('#{$base-url}bebas-kai.woff') format('woff'),
-            url('#{$base-url}bebas-kai.ttf')  format('truetype');
+    font-family: 'UniformExtraCondensed-medium';
+    src:    url('#{$base-url}UniformExtraCondensed-medium.eot?#iefix') format('embedded-opentype'),
+            url('#{$base-url}UniformExtraCondensed-medium.otf')  format('opentype'),
+            url('#{$base-url}UniformExtraCondensed-medium.woff') format('woff'),
+            url('#{$base-url}UniformExtraCondensed-medium.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -39,7 +39,7 @@ $base-url: '../fonts/';
 // $subhead: 'Oswald', sans-serif;
 // $body: 'Lato', sans-serif;
 // SETUP 3
-$headline: 'BebasNeue', sans-serif;
+$headline: 'UniformExtraCondensed-medium', sans-serif;
 $subhead: 'lato', sans-serif;
 $body: 'lato', sans-serif;
 $labels: 'Oswald', sans-serif;

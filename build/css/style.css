@@ -6,8 +6,8 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'BebasNeue';
-  src: url("../fonts/bebas-kai.eot?#iefix") format("embedded-opentype"), url("../fonts/bebas-kai.otf") format("opentype"), url("../fonts/bebas-kai.woff") format("woff"), url("../fonts/bebas-kai.ttf") format("truetype");
+  font-family: 'UniformExtraCondensed-medium';
+  src: url("../fonts/UniformExtraCondensed-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/UniformExtraCondensed-medium.otf") format("opentype"), url("../fonts/UniformExtraCondensed-medium.woff") format("woff"), url("../fonts/UniformExtraCondensed-medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -16,7 +16,7 @@
   visibility: hidden; }
 
 h1 {
-  font-family: "BebasNeue", sans-serif;
+  font-family: "UniformExtraCondensed-medium", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5em;
@@ -24,7 +24,7 @@ h1 {
   line-height: .9em; }
 
 h2 {
-  font-family: "BebasNeue", sans-serif;
+  font-family: "UniformExtraCondensed-medium", sans-serif;
   font-weight: 400;
   font-size: 3.2em;
   letter-spacing: -.02em;
@@ -370,9 +370,9 @@ input[type=text]:focus {
   margin-top: -3px; }
 
 .quote .price {
-  font-family: "BebasNeue", sans-serif;
+  font-family: "UniformExtraCondensed-medium", sans-serif;
   font-size: 3.5em; }
 
 .quote .num {
-  font-family: "BebasNeue", sans-serif;
+  font-family: "UniformExtraCondensed-medium", sans-serif;
   font-size: 2.5em; }
